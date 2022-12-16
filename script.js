@@ -7,18 +7,19 @@ const incomplete = document.getElementById("incomplete");
 const completed = document.getElementById("completed");
 const search = document.getElementById("search");
 const list = document.getElementById("task-list");
-
+var counter = 0;
 const submittask = () =>{
     var task = input.value;
     var priority = prioritylevel.value;
     var x = document.createElement("li");
-    x.innerHTML = `<p class="${priority}" id="task">${task}</p><button onclick="markcompleted()"><i class="fa-solid fa-check"></i></button>`
+    x.innerHTML = `<p class="${priority}" id="${counter}-task">${task}<button onclick="markcompleted(this)"><i class="fa-solid fa-check"></i></button></p>`
     list.append(x);
+    counter++;
     console.log("worked");
 }
-const markcompleted = () => {
-    var x = document.getElementById("task");
-    x.className = "completed";
+const markcompleted = (elem) => {
+    
+    elem.parentElement.className = "completed";
 }
 
 search.onkeyup =()=> {
@@ -38,5 +39,46 @@ search.onkeyup =()=> {
     }
   }
 }
+completed.onclick=()=>{
+  li = list.getElementsByTagName('li');
+  for(i=0;i<li.length;i++)
+  {
+    var txt = li[i].getElementsByTagName("p")[0].className;
+    console.log(txt);
+
+    if(txt=="completed"){
+     li[i].style.display = "";}
+       else {
+      li[i].style.display = "none";
+    }
+  } 
+ }
+
+incomplete.onclick=()=>{
+  li = list.getElementsByTagName('li');
+  for(i=0;i<li.length;i++)
+  {
+    var txt = li[i].getElementsByTagName("p")[0].className;
+    console.log(txt);
+
+    if(txt!="completed"){
+     li[i].style.display = "";}
+       else {
+      li[i].style.display = "none";
+    }
+  } 
+ }
+all.onclick=()=>{
+  li = list.getElementsByTagName('li');
+  for(i=0;i<li.length;i++)
+  {
+    
+
+   
+     li[i].style.display = "";
+       
+    }
+  
+ }
 
 
