@@ -1,4 +1,4 @@
-*{
+/* *{
     background-color: aqua;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -80,3 +80,105 @@
     font-size: 4rem;
     color: aliceblue;
 }
+.formadd{
+    background-color: grey;
+    display: block;
+    padding: 2rem;
+    border-radius: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+}
+.formadd form{
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+}
+.formadd form input{
+    background-color: antiquewhite;
+    height: 2rem;
+    width: 40vw;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+}
+ */
+ #app {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #task-input {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #priority-level {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 20%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #filters button {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  #filters button:hover {
+    background-color: #ccc;
+  }
+  
+  #search {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  p.completed {
+    text-decoration: line-through;
+    color: #ccc;
+  }
+  
+  p.high {
+    color: red;
+
+  }
+  
+  p.medium {
+    color: orange;
+  }
+  
+  p.low {
+    color: green;
+  }
+  
