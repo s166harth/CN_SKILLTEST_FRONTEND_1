@@ -12,10 +12,13 @@ const submittask = () =>{
     var task = input.value;
     var priority = prioritylevel.value;
     var x = document.createElement("li");
-    x.innerHTML = `<p class="${priority}" id="${counter}-task">${task}<button onclick="markcompleted(this)"><i class="fa-solid fa-check"></i></button></p>`
+    x.innerHTML = `<p class="${priority}" id="${counter}-task">${task}<button onclick="markcompleted(this)"><i class="fa-solid fa-check"></i></button><button onclick="deleteitem(this)"><i class="fa-solid fa-trash"></i></button></p>`
     list.append(x);
     counter++;
     console.log("worked");
+}
+const deleteitem = (elem) =>{
+  elem.parentElement.style.display = "none";
 }
 const markcompleted = (elem) => {
     

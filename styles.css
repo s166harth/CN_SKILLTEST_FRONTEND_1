@@ -10,7 +10,7 @@
  #formdiv{
   display: flex;
   flex-wrap: wrap;
-  padding: 2rem;
+
  }
 
 #app h1{
@@ -70,45 +70,89 @@ border-radius: 60px;
   }
   
   #priority-level {
-    width: vw;
+    width: 15rem;
     padding: 2rem;
-    margin: 0.8rem 0;
+    margin-top: 1rem;
+    margin-left: 2rem;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 400px;
   }
   
-  button {
-    width: 20%;
+ #submit-button {
+    width: 10rem;
     background-color: #4CAF50;
-    
+    height: 4rem;
     color: white;
-    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 400px;
     cursor: pointer;
+    font-size: 2rem;
+  
   }
   
-  button:hover {
-    background-color: #45a049;
+  #submit-button:hover{
+    background-color: #000;
+    transition: 1s;
+    width: 20rem;
+    height:10rem;
   }
-  
+  #filters{
+    display: flex;
+    margin-left: 2rem;
+    flex-wrap: wrap;
+  }
   #filters button {
-    background-color: #fff;
+    background-color: rgb(227, 235, 104);
     color: #000;
+    margin-left: 2rem;
+    height: 3rem;
+    width: 8rem;
+    margin-top: 2rem;
+    border-radius: 300px;
+
   }
   
   #filters button:hover {
     background-color: #ccc;
+    width: 18rem;
+    transition: 1s;
   }
   
   #search {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    width: 60vw;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-radius: 400rem;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    
+  }
+  #task-list{
+    list-style: none;
+  }
+  
+
+  li p{
+    font-size: 2rem;
+    background-color: #DAAFAF; 
+    border-radius: 3rem;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+  }
+  li p button{
+    font-size: 1rem;
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    
+  }
+  li p i{
+    font-size: 2rem;
   }
   
   p.completed {
@@ -117,15 +161,16 @@ border-radius: 60px;
   }
   
   p.high {
-    color: red;
+    background-color: rgb(202, 59, 59);
 
   }
   
   p.medium {
-    color: orange;
+    background-color: orange;
   }
   
   p.low {
-    color: green;
+    background-color: green;
   }
+  
   
