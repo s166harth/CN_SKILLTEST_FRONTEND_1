@@ -1,23 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@700&family=Dancing+Script&display=swap');
 
  #app {
-    width: 50%;
-    margin: 0 auto;
+    width: 50vw;
+    margin-left: 5rem;
     text-align: center;
-  }
+    
+ }
+ #formdiv{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+ }
+
+#app h1{
+ 
+font-family: 'Dancing Script';
+font-style: normal;
+font-weight: 400;
+font-size: 6rem;
+line-height: 1.4rem;
+display: flex;
+align-items: left;
+text-align: left;
+margin-left: 0;
+color: #DAAFAF;
+text-shadow: 82px 25px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+ .bg {
+	animation:movingdiv 2s ease-in-out infinite alternate;
+	background-image: linear-gradient(-60deg, rgb(77, 112, 181) 50%, rgb(48, 77, 109) 50%);
+	bottom:0;
+	left:-50%;
+	opacity:.5;
+	position:fixed;
+	right:-50%;
+	top:0;
+	z-index:-1;
+}
   
+.bg2 {
+	animation-direction:alternate-reverse;
+	animation-duration:3s;
+}
+  
+.bg3 {
+	animation-duration:4s;
+}
+@keyframes movingdiv {
+	0% {
+	  transform:translateX(-25%);
+	}
+	100% {
+	  transform:translateX(25%);
+	}
+  }
+
   #task-input {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
+    width: 20rem;
+height: 6rem;
+top: 22.3rem;
+font-size: 2rem;
+padding:2rem;
+font-family: Chivo Mono;
+background: rgba(217, 217, 217, 0.97);
+border-radius: 60px;
   }
   
   #priority-level {
-    width: 20%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    width: vw;
+    padding: 2rem;
+    margin: 0.8rem 0;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -26,9 +81,9 @@
   button {
     width: 20%;
     background-color: #4CAF50;
+    
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 2rem;
     border: none;
     border-radius: 4px;
     cursor: pointer;
