@@ -31,7 +31,7 @@ text-shadow: 82px 25px 10px rgba(0, 0, 0, 0.25);
 
  .bg {
 	animation:movingdiv 2s ease-in-out infinite alternate;
-	background-image: linear-gradient(-60deg, rgb(77, 112, 181) 50%, rgb(48, 77, 109) 50%);
+	background-image: linear-gradient(-60deg, rgb(132, 4, 236) 50%, rgb(9, 41, 75) 50%);
 	bottom:0;
 	left:-50%;
 	opacity:.5;
@@ -65,7 +65,7 @@ top: 22.3rem;
 font-size: 2rem;
 padding:2rem;
 font-family: Chivo Mono;
-background: rgba(217, 217, 217, 0.97);
+background: rgba(217, 217, 217, 0);
 border-radius: 60px;
   }
   
@@ -75,8 +75,9 @@ border-radius: 60px;
     margin-top: 1rem;
     margin-left: 2rem;
     box-sizing: border-box;
-    border: 2px solid #ccc;
+    border: 2px solid rgba(204, 204, 204, 0);
     border-radius: 400px;
+    background-color: rgba(0, 0, 0, 0.161);
   }
   
  #submit-button {
@@ -105,7 +106,7 @@ border-radius: 60px;
     flex-wrap: wrap;
   }
   #filters button {
-    background-color: rgb(227, 235, 104);
+    background-color: rgb(104, 235, 157);
     color: #000;
     margin-left: 2rem;
     height: 3rem;
@@ -149,10 +150,13 @@ border-radius: 60px;
     padding: 1rem;
     margin-left: 1rem;
     margin-bottom: 1rem;
+    border-radius: 200rem;
+    background-color: rgba(0, 255, 255, 0.308);
     
   }
   li p i{
     font-size: 2rem;
+    border-radius: 200rem;
   }
   
   p.completed {
